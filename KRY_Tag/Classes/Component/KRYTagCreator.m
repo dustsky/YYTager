@@ -49,12 +49,11 @@
 
 + (KRYStringStaticTag *)createLabelTagWithText:(NSString*)text sizeType:(KRYLableTagSizeType)sizeType {
     
-    KRYStringStaticTag *labelTag = [[KRYStringStaticTag alloc] initWithText:text textSize:sizeType];
-    
     KRYTagLabelConfigure *configure = [[KRYTagLabelConfigure alloc] initWithTagSizeType:sizeType];
     
+    KRYStringStaticTag *labelTag = [[KRYStringStaticTag alloc] initWithText:text textSize:configure.defaultTextSize];
+    
     labelTag.text = text;
-    labelTag.textSize = configure.defaultTextSize;
     labelTag.height = configure.defaultHeight;
     labelTag.cornerRadius = configure.defaultCornerRadius;
     labelTag.horizontalInset = configure.defaultHorizontalInset;

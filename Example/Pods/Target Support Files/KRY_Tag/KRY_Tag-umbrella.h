@@ -11,6 +11,7 @@
 #endif
 
 #import "KRYTag.h"
+#import "KRYTagCreator.h"
 #import "KRYStringActionTag.h"
 #import "KRYStringBasicTag.h"
 #import "KRYStringStaticTag.h"

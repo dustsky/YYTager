@@ -19,9 +19,10 @@
 {
     [super viewDidLoad];
     UIView *parentView = [[UIView alloc] initWithFrame:CGRectMake(200, 100, 300, 400)];
-    KRYStringStaticTag *tag1 = [[KRYStringStaticTag alloc] initWithText:@"你好呀" textSize:17.0];
-    tag1.fillColor = [UIColor greenColor];
-    tag1.cornerRadius = 20;
+//    KRYStringStaticTag *tag1 = [[KRYStringStaticTag alloc] initWithText:@"你好呀" textSize:17.0];
+//    tag1.fillColor = [UIColor greenColor];
+//    tag1.cornerRadius = 20;
+    KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好呀" sizeType:MIDDLE];
     [parentView addSubview:tag1];
     [self.view addSubview:parentView];
 	// Do any additional setup after loading the view, typically from a nib.

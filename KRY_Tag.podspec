@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KRY_Tag'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'iOS标签'
 
 # This description is used to generate tags and improve search results.

@@ -1,6 +1,6 @@
 {
   "name": "KRY_Tag",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "iOS标签",
   "description": "占坑，后续填充说明.",
   "homepage": "https://github.com/dustsky/YYTager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:dustsky/YYTager.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -25,6 +25,16 @@
       "name": "Core",
       "source_files": "KRY_Tag/Classes/Core/*.{h,m}",
       "public_header_files": "KRY_Tag/Classes/Core/*.h"
+    },
+    {
+      "name": "Component",
+      "source_files": "KRY_Tag/Classes/Component/*.{h,m}",
+      "public_header_files": "KRY_Tag/Classes/Component/*.h",
+      "dependencies": {
+        "KRY_Tag/Core": [
+
+        ]
+      }
     }
   ]
 }
