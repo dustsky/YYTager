@@ -23,8 +23,10 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
     
     CGSize size = textDefaultSize(text,textSize);
     if (self = [self initWithFrame:CGRectMake(0, 0, size.width, size.height)]) {
-        _width = size.width;
-        _height = size.height;
+        self.width = size.width;
+        self.height = size.height;
+        self.text = text;
+        self.textSize = textSize;
     }
     return self;
 }
@@ -99,8 +101,13 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 
 #pragma mark - Public
 
-- (void)sizeToFitText {
+- (void)layout {
     
+    
+}
+
+- (void)sizeToFitText {
+
     [self _updateUI];
 }
 

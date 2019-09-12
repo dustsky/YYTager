@@ -7,6 +7,7 @@
 //
 
 #import "KRYViewController.h"
+#import <KRYTag.h>
 
 @interface KRYViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    KRYStringStaticTag *tag1 = [[KRYStringStaticTag alloc] initWithText:@"你好呀" textSize:17.0];
+    [self.view addSubview:tag1];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

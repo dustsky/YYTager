@@ -10,6 +10,11 @@
 #endif
 #endif
 
+#import "KRYTag.h"
+#import "KRYStringActionTag.h"
+#import "KRYStringBasicTag.h"
+#import "KRYStringStaticTag.h"
+
 FOUNDATION_EXPORT double KRY_TagVersionNumber;
 FOUNDATION_EXPORT const unsigned char KRY_TagVersionString[];
 

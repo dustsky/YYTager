@@ -49,6 +49,8 @@ typedef NS_ENUM(NSUInteger, KRYStringBasicTagType) {
 
 - (instancetype)initWithText:(NSString *)text textSize:(CGFloat)textSize;
 
+- (void)layout;
+
 - (void)sizeToFitText;
 
 @end

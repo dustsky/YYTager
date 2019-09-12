@@ -1,9 +1,9 @@
 {
   "name": "KRY_Tag",
-  "version": "0.1.0",
-  "summary": "A short description of KRY_Tag.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/dustsky/KRY_Tag",
+  "version": "0.0.1",
+  "summary": "iOS标签",
+  "description": "占坑，后续填充说明.",
+  "homepage": "https://github.com/dustsky/YYTager",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,19 @@
     "dustsky": "gsmxsky@gmail.com"
   },
   "source": {
-    "git": "https://github.com/dustsky/KRY_Tag.git",
-    "tag": "0.1.0"
+    "git": "git@github.com:dustsky/YYTager.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "KRY_Tag/Classes/**/*"
+  "source_files": "KRY_Tag/Classes/**/*.{h,m}",
+  "public_header_files": "KRY_Tag/Classes/Header/*.h",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "KRY_Tag/Classes/Core/*.{h,m}",
+      "public_header_files": "KRY_Tag/Classes/Core/*.h"
+    }
+  ]
 }

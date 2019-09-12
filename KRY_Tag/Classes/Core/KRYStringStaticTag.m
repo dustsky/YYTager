@@ -60,7 +60,36 @@
 - (void)layoutSubviews {
     _staticLabelTag.frame = CGRectMake(self.horizontalInset, 0, self.width, self.height);
 }
-
+//
+//- (void)setWidth:(CGFloat)width {
+//    
+//    [super setWidth:width];
+//}
+//
+//- (void)setHeight:(CGFloat)height {
+//
+//    [super setHeight:height];
+//}
+//
+//- (void)setTextSize:(CGFloat)textSize {
+//    [super setTextSize:textSize];
+//}
+//
+//- (void)setFillColor:(UIColor *)fillColor {
+//    [super setFillColor:fillColor];
+//}
+//
+//- (void)setStrokeColor:(UIColor *)strokeColor {
+//    [super setStrokeColor:strokeColor];
+//}
+//
+//- (void)setHorizontalInset:(CGFloat)horizontalInset {
+//    [super setHorizontalInset:horizontalInset];
+//}
+//
+//- (void)setTextColor:(UIColor *)textColor {
+//    [super setTextColor:textColor];
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

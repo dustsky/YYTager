@@ -22,8 +22,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		733EB387232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733EB386232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework */; };
+		733EB388232A320000F67E8F /* Pods_KRY_Tag_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733EB386232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework */; };
+		733EB389232A320000F67E8F /* Pods_KRY_Tag_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 733EB386232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C776CB4FF1278FB305ACCF81 /* Pods_KRY_Tag_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2051FCB5885DB3555C4453 /* Pods_KRY_Tag_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,20 @@
 			remoteInfo = KRY_Tag;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		733EB38A232A320100F67E8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				733EB389232A320000F67E8F /* Pods_KRY_Tag_Example.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09E0C4B226894111430740DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -62,6 +78,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		733EB386232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_KRY_Tag_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2051FCB5885DB3555C4453 /* Pods_KRY_Tag_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRY_Tag_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E195BF0BBCD0ACDC23C3B97 /* Pods_KRY_Tag_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KRY_Tag_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,10 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				733EB387232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				733EB388232A320000F67E8F /* Pods_KRY_Tag_Example.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C776CB4FF1278FB305ACCF81 /* Pods_KRY_Tag_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +137,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				733EB386232A2F7C00F67E8F /* Pods_KRY_Tag_Example.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -208,6 +227,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				C8294AA59CDC0587E4778BA3 /* [CP] Embed Pods Frameworks */,
+				733EB38A232A320100F67E8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -516,6 +536,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KRY_Tag/KRY_Tag-Prefix.pch";
 				INFOPLIST_FILE = "KRY_Tag/KRY_Tag-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +553,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KRY_Tag/KRY_Tag-Prefix.pch";
 				INFOPLIST_FILE = "KRY_Tag/KRY_Tag-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
