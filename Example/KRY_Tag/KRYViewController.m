@@ -23,6 +23,8 @@
 //    tag1.fillColor = [UIColor greenColor];
 //    tag1.cornerRadius = 20;
     KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好呀" sizeType:MIDDLE];
+    tag1.fillColor = [UIColor yellowColor];
+    tag1.strokeColor = [UIColor redColor];
     [parentView addSubview:tag1];
     [self.view addSubview:parentView];
 	// Do any additional setup after loading the view, typically from a nib.

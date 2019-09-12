@@ -49,11 +49,19 @@
     
     _staticLabelTag.textColor = self.textColor;
     _staticLabelTag.layer.cornerRadius = self.cornerRadius;
-    _staticLabelTag.layer.borderColor = self.strokeColor.CGColor;
     _staticLabelTag.text = self.text;
     _staticLabelTag.font = [UIFont systemFontOfSize:self.textSize];
     self.backgroundColor = self.fillColor;
     self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, self.width + self.horizontalInset * 2, self.height);
+    
+    if (self.strokeColor) {
+        _staticLabelTag.layer.borderWidth = 1.0;
+        _staticLabelTag.layer.borderColor = self.strokeColor.CGColor;
+    }
+    else {
+        _staticLabelTag.layer.borderWidth = 0.0;
+        _staticLabelTag.layer.borderColor = nil;
+    }
     [self setNeedsLayout];
 }
 
