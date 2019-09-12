@@ -1,6 +1,6 @@
 {
   "name": "KRY_Tag",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "summary": "iOS标签",
   "description": "占坑，后续填充说明.",
   "homepage": "https://github.com/dustsky/YYTager",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "git@github.com:dustsky/YYTager.git",
-    "tag": "0.0.5"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "8.0"
