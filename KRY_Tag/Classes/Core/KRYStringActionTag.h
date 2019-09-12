@@ -6,10 +6,10 @@
 //
 
 
-#import <UIKit/UIKit.h>
+#import <KRYStringBasicTag.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KRYStringActionTag : UITextField
+@interface KRYStringActionTag : KRYStringBasicTag
 
 @end
 

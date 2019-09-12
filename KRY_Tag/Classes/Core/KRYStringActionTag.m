@@ -12,6 +12,10 @@
 
 @end
 
+@implementation _KRYStringActionTag
+
+@end
+
 @implementation KRYStringActionTag
 
 /*
