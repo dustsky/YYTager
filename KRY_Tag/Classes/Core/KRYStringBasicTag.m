@@ -52,10 +52,8 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 }
 
 - (void)setWidth:(CGFloat)width {
-    if (width < _width) {
-        return;
-    }
-    _width = width;
+    CGSize fitSize = textDefaultSize(_text, _textSize);
+    _width = MAX(width, fitSize.width);
     [self _updateUI];
 }
 

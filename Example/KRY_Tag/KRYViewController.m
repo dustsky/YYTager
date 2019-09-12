@@ -22,7 +22,7 @@
 //    KRYStringStaticTag *tag1 = [[KRYStringStaticTag alloc] initWithText:@"你好呀" textSize:17.0];
 //    tag1.fillColor = [UIColor greenColor];
 //    tag1.cornerRadius = 20;
-    KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好呀" sizeType:MIDDLE];
+    KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好的我发挥文化" sizeType:MIDDLE];
     tag1.fillColor = [UIColor yellowColor];
     tag1.strokeColor = [UIColor redColor];
 
@@ -30,7 +30,10 @@
     [self.view addSubview:parentView];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        tag1.text = @"你好的我发挥文化";
+        tag1.text = @"你";
+        tag1.width = 40;
+        
+        
     });
 	// Do any additional setup after loading the view, typically from a nib.
 }
