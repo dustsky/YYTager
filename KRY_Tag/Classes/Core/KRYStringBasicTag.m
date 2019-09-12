@@ -10,6 +10,7 @@
 #import "KRYStringStaticTag.h"
 
 static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
+    
     return [text boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:textSize]} context:nil].size;
 }
 
@@ -93,6 +94,11 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 
 - (void)setCornerRadius:(CGFloat)cornerRadius {
     _cornerRadius = cornerRadius;
+    [self _updateUI];
+}
+
+- (void)setText:(NSString *)text {
+    _text = text;
     [self _updateUI];
 }
 

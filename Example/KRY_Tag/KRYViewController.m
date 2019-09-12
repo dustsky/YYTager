@@ -25,8 +25,13 @@
     KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好呀" sizeType:MIDDLE];
     tag1.fillColor = [UIColor yellowColor];
     tag1.strokeColor = [UIColor redColor];
+
     [parentView addSubview:tag1];
     [self.view addSubview:parentView];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        tag1.text = @"你好的我发挥文化";
+    });
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
