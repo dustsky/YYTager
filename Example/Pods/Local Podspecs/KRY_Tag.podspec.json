@@ -1,0 +1,22 @@
+{
+  "name": "KRY_Tag",
+  "version": "0.1.0",
+  "summary": "A short description of KRY_Tag.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dustsky/KRY_Tag",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dustsky": "gsmxsky@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dustsky/KRY_Tag.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KRY_Tag/Classes/**/*"
+}

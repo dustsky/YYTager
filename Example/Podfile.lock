@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - KRY_Tag (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - KRY_Tag (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  KRY_Tag:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  KRY_Tag: 5db29d7e96065b5454af8a8a3f0f516fad5ef0e5
+
+PODFILE CHECKSUM: fdd71aa25c326f48cef973111676131efb0c45da
+
+COCOAPODS: 1.7.5
