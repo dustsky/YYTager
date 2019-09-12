@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'KRY_Tag_Example' do
+  pod 'KRY_Tag', :path => '../'
+
+  target 'KRY_Tag_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
