@@ -8,7 +8,7 @@
 #import "KRYStringActionTag.h"
 #import "KRYStringBasicTag.h"
 
-@interface _KRYStringActionTag : KRYStringBasicTag
+@interface _KRYStringActionTag : UITextField
 
 @end
 

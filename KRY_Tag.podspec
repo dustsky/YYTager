@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KRY_Tag'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'iOS标签'
 
 # This description is used to generate tags and improve search results.
@@ -33,11 +33,19 @@ Pod::Spec.new do |s|
   s.source_files = 'KRY_Tag/Classes/**/*.{h,m}'
   s.public_header_files = 'KRY_Tag/Classes/Header/*.h'
 
-  s.subspec 'Core' do |ss|
-    ss.source_files = 'KRY_Tag/Classes/Core/*.{h,m}'
-    ss.public_header_files = 'KRY_Tag/Classes/Core/*.h'
+  s.subspec 'Core' do |core|
+    core.source_files = 'KRY_Tag/Classes/Core/*.{h,m}'
+    core.public_header_files = 'KRY_Tag/Classes/Core/*.h'
   end
+
+  s.subspec 'Component' do |cmt|
+    cmt.source_files = 'KRY_Tag/Classes/Component/*.{h,m}'
+    cmt.public_header_files = 'KRY_Tag/Classes/Component/*.h'
+    cmt.dependency 'KRY_Tag/Core'
+  end
+
   # s.resource_bundles = {
+
   #   'KRY_Tag' => ['KRY_Tag/Assets/*.png']
   # }
 

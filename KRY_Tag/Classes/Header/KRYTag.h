@@ -10,5 +10,6 @@
 
 #import "KRYStringStaticTag.h"
 #import "KRYStringActionTag.h"
+#import "KRYTagCreator.h"
 
 #endif /* KRYTag_h */

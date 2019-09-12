@@ -46,6 +46,7 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
         return nil;
     }
     self = [super initWithFrame:frame];
+    
     return self;
 }
 
@@ -87,6 +88,11 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 
 - (void)setTextColor:(UIColor *)textColor {
     _textColor = textColor;
+    [self _updateUI];
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius {
+    _cornerRadius = cornerRadius;
     [self _updateUI];
 }
 
