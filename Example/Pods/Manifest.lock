@@ -4,9 +4,9 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - KRY_Tag (0.0.1):
-    - KRY_Tag/Core (= 0.0.1)
-  - KRY_Tag/Core (0.0.1)
+  - KRY_Tag (0.0.2):
+    - KRY_Tag/Core (= 0.0.2)
+  - KRY_Tag/Core (0.0.2)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  KRY_Tag: ea48c2f224281a5a73c361469a500c9a0af6829f
+  KRY_Tag: 208eb76a4647b4fa3235dbaa6cf833623d57c480
 
 PODFILE CHECKSUM: fdd71aa25c326f48cef973111676131efb0c45da
 
