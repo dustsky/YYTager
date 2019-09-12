@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KRY_Tag'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KRY_Tag.'
+  s.summary          = 'iOS标签'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,29 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+占坑，后续填充说明.
                        DESC
 
-  s.homepage         = 'https://github.com/dustsky/KRY_Tag'
+  s.homepage         = 'https://github.com/dustsky/YYTager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dustsky' => 'gsmxsky@gmail.com' }
-  s.source           = { :git => 'https://github.com/dustsky/KRY_Tag.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:dustsky/YYTager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'KRY_Tag/Classes/**/*'
-  
+  s.source_files = 'KRY_Tag/Classes/**/*.{h,m}'
+  s.public_header_files = 'KRY_Tag/Classes/Header/*.h'
+
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'KRY_Tag/Classes/Core/*.{h,m}'
+    ss.public_header_files = 'KRY_Tag/Classes/Core/*.h'
+  end
   # s.resource_bundles = {
   #   'KRY_Tag' => ['KRY_Tag/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

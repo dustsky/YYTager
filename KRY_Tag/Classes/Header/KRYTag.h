@@ -8,5 +8,7 @@
 #ifndef KRYTag_h
 #define KRYTag_h
 
+#import "KRYStringStaticTag.h"
+#import "KRYStringActionTag.h"
 
 #endif /* KRYTag_h */
