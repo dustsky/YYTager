@@ -17,8 +17,18 @@ typedef NS_ENUM(NSUInteger, KRYLableTagSizeType) {
 
 @interface KRYTagCreator : NSObject
 
-+ (KRYStringStaticTag *)createLabelTagWithText:(NSString*)text sizeType:(KRYLableTagSizeType)sizeType;
 
++ (KRYStringStaticTag *)createLabelTagWithPoint:(CGPoint)point text:(NSString*)text sizeType:(KRYLableTagSizeType)sizeType;
+
+/**
+ 生成纯展示型标签，宽度随文字自动变化
+
+ @param text <#text description#>
+ @param sizeType <#sizeType description#>
+ @return <#return value description#>
+ */
+
++ (KRYStringStaticTag *)createLabelTagWithText:(NSString*)text sizeType:(KRYLableTagSizeType)sizeType;
 @end
 
 NS_ASSUME_NONNULL_END

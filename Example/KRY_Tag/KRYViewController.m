@@ -15,6 +15,11 @@
 
 @implementation KRYViewController
 
+static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
+    
+    return [text boundingRectWithSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 10) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:textSize]} context:nil].size;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -22,7 +27,9 @@
 //    KRYStringStaticTag *tag1 = [[KRYStringStaticTag alloc] initWithText:@"你好呀" textSize:17.0];
 //    tag1.fillColor = [UIColor greenColor];
 //    tag1.cornerRadius = 20;
-    KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好的我发挥文化" sizeType:MIDDLE];
+    KRYStringStaticTag *tag1 = [KRYTagCreator createLabelTagWithText:@"你好的我发挥文化" sizeType:SMALL];
+    
+    CGSize size = textDefaultSize(@"你好的我发挥文化", 16);
     tag1.fillColor = [UIColor yellowColor];
     tag1.strokeColor = [UIColor redColor];
 
@@ -32,6 +39,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         tag1.text = @"你";
         tag1.width = 40;
+        tag1.height = 50;
         
         
     });

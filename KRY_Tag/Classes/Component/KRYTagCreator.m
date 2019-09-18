@@ -47,16 +47,25 @@
 
 @implementation KRYTagCreator
 
-+ (KRYStringStaticTag *)createLabelTagWithText:(NSString*)text sizeType:(KRYLableTagSizeType)sizeType {
++ (KRYStringStaticTag *)createLabelTagWithPoint:(CGPoint )point
+                                           text:(NSString*)text
+                                       sizeType:(KRYLableTagSizeType)sizeType {
+    
     
     KRYTagLabelConfigure *configure = [[KRYTagLabelConfigure alloc] initWithTagSizeType:sizeType];
     
-    KRYStringStaticTag *labelTag = [[KRYStringStaticTag alloc] initWithText:text textSize:configure.defaultTextSize];
+    KRYStringStaticTag *labelTag = [[KRYStringStaticTag alloc] initWithPoint:point text:text textSize:configure.defaultTextSize];
     
     labelTag.text = text;
     labelTag.height = configure.defaultHeight;
     labelTag.cornerRadius = configure.defaultCornerRadius;
     labelTag.horizontalInset = configure.defaultHorizontalInset;
     return labelTag;
+   
+}
+
++ (KRYStringStaticTag *)createLabelTagWithText:(NSString*)text
+                                      sizeType:(KRYLableTagSizeType)sizeType {
+     return [KRYTagCreator createLabelTagWithPoint:CGPointZero text:text sizeType:sizeType];
 }
 @end

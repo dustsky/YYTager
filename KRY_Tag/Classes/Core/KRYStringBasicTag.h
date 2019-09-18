@@ -47,9 +47,12 @@ typedef NS_ENUM(NSUInteger, KRYStringBasicTagType) {
 
 @property (nonatomic,assign,getter=isEditable) BOOL editable; //是否可编辑
 
-- (instancetype)initWithText:(NSString *)text textSize:(CGFloat)textSize;
+- (instancetype)initWithPoint:(CGPoint)point
+                         text:(NSString *)text
+                     textSize:(CGFloat)textSize;
 
-- (void)layout;
+- (instancetype)initWithText:(NSString *)text
+                    textSize:(CGFloat)textSize;
 
 - (void)sizeToFitText;
 

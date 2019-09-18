@@ -20,16 +20,25 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 
 @implementation KRYStringBasicTag
 
-- (instancetype)initWithText:(NSString *)text textSize:(CGFloat)textSize {
+- (instancetype)initWithPoint:(CGPoint)point
+                         text:(NSString *)text
+                     textSize:(CGFloat)textSize {
     
     CGSize size = textDefaultSize(text,textSize);
-    if (self = [self initWithFrame:CGRectMake(0, 0, size.width, size.height)]) {
-        self.width = size.width;
-        self.height = size.height;
-        self.text = text;
-        self.textSize = textSize;
+    if (self = [self initWithFrame:CGRectMake(point.x, point.y, size.width, size.height)]) {
+        _width = size.width;
+        _height = size.height;
+        _text = text;
+        _textSize = textSize;
+        [self _updateUI];
     }
     return self;
+}
+
+
+- (instancetype)initWithText:(NSString *)text textSize:(CGFloat)textSize {
+    
+    return [self initWithPoint:CGPointZero text:text textSize:textSize];
 }
 
 - (instancetype)init {
@@ -111,13 +120,11 @@ static CGSize textDefaultSize(NSString *text, CGFloat textSize) {
 
 #pragma mark - Public
 
-- (void)layout {
-    
-    
-}
-
 - (void)sizeToFitText {
-
+    
+    CGSize fitSize = textDefaultSize(_text, _textSize);
+    _width = fitSize.width;
+    _height = fitSize.height;
     [self _updateUI];
 }
 
